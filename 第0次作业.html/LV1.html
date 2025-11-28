@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LV1</title>
+    <style>
+        .title-row{
+            display:flex;
+            align-items: center;
+            gap:10px;
+        }
+        .title-row img{
+            width:40px;
+        }
+        .bg-text{
+            background-color:aqua;
+            padding:8px;
+        }
+        .inline-group{
+            display:flex;
+            align-items: flex-start;
+            gap:15px;
+        }
+        ul{
+            list-style: disc !important;
+            margin-left:80px !important; 
+            line-height:1.8;
+        }
+        li{
+            font-size: 20px;
+            list-style-type:  disc !important;
+        }
+        .input-container{
+            display:flex;
+        }
+        input{
+            width:300px;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        button{
+            padding: 5px 10px;
+        }
+        .form-group{
+            margin-bottom: 15px;
+        }
+        .form-group label,
+        .form-group input,
+        .form-group select,
+        .form-group textarea{
+            display:inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        textarea{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-row">
+    <h1><strong>关于我对红岩网校的认识</strong></h1>
+    <img src="https://ts3.tc.mm.bing.net/th/id/OIP-C.t8fpVHDMORWuqhVgMOn-JwAAAA?w=108&h=108&c=1&bgcl=fdb243&r=0&o=7&dpr=1.5&pid=ImgRC&rm=3" alt="红岩网校" height="50">
+    </div>
+    <hr>
+<h2><strong>一、大佬聚集地</strong></h2>
+<br>
+<p class="bg-text">红岩网校的大佬们协作开发出了掌上重邮、重邮小帮手等实用功能，为全体师生带来了很大的便利，还曾获得“全国十佳高校学生网站”的荣誉称号</p>
+<br>
+<a href="https://app.redrock.team/#/" target="_blank">掌上重邮</a>
+<br>
+<img src="../素材.html/掌上重邮.jpg" alt="没加载出来？没关系，这你肯定很熟悉"
+ title="为大佬点赞" height="100"><img src="../素材.html/重邮小帮手.jpg" alt="没加载出来？没关系，这你肯定很熟悉" title="为大佬点赞" 
+ height="100">
+<br>
+鼓掌！！！！膜拜大佬！向大佬们学习！
+<br>
+<img src="../素材.html/小企鹅.jpg" alt="没加载出来？？那太遗憾了，这是一只非常可爱的小企鹅。" title="我要一步一步向上爬~~" height="200">
+<br>
+<h2><strong>二、各部门齐心协力，共同进步</strong></h2>
+<br>
+<h3>1.我向往的前端</h3>
+<br>
+<p class="bg-text">前端部门主要是负责用户直接看到并交互的部分,比如网页的按钮、图片、文字排版等，核心是用HTML、CSS、JavaScript实现“让界面能看、能用”
+</p>
+<br>
+<img src="../素材.html/黑客.jpg" alt="图片被黑客入侵了？？" title="没错，我们前端就是这么帅气" height="200">
+<br>
+<h3>2.其它部门</h3>
+<br>
+<p class="bg-text">包括移动开发、后端、ai等...各个部门一起合作，从了解用户的需求，到提出想法、设计，把想法变成现实、测试维护...大家有条不紊的合作着，一届又一届，一起努力着把红岩网校管理的越来越好。
+</p>
+<br>
+<img src="../素材.html/赞.jpg" alt="没加载出来？反正就是给你们的赞~" title="赞赞赞赞~~" height="100">
+<audio src="../素材.html/y2004.wav" controls>鼓掌鼓掌</audio>
+<h2><strong>三、自我介绍</strong></h2>
+<br>
+<div class="inline-group">
+<img src="../素材.html/shuai.jpg" alt="帅爆了" style="width: 100px;">
+<ul style="list-style-type: disc !important;
+margin-left: 40px !important;">
+    <li>彭雅丽</li>
+    <li>女</li>
+    <li>重庆</li> 
+</ul>
+</div>
+<br>
+<div class="input-container">
+    <input type="text"value="哦呦！搜搜这个人什么来历">
+    <button>搜索不到？难道是资本家在做局</button>
+</div>
+<br>
+<p><strong>下面是我的银行卡账号和密码:</strong></p>
+<table class="form-table">
+    <tr>
+        <td>用户名：</td>
+        <td><input type="text" placeholder="666666"></td>
+    </tr>
+    <tr>
+        <td>密码：</td>
+        <td><input type="password" value="88888888"></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="btn-group">
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+        </td>
+    </tr>
+</table>
+<br>
+<p><strong>一些其他信息：</strong></p>
+<br>
+<div class="form-group">
+   <label>性别</label>
+   <input type="radio" name="gender" id="female">
+   <label for="female">女</label>
+   <input type="radio" name="gender" id="male">
+   <label for="male">男</label>
+   <label>城市：</label>
+   <select>
+    <option value="chongqing">重庆</option>
+    <option value="beijing">北京</option>
+    <option value="shanghai">上海</option>
+</select>
+<label>爱好：</label>
+<input type="checkbox" name="hobby" id="yanyunshiliusheng">
+<label for="yanyunshiliusheng">燕云十六声</label> 
+<img src="../素材.html/yysls.png" alt="帅气的烧冬瓜" title="烧冬瓜" width="200"> 
+<input type="checkbox" name="hobby" id="model assembly">
+<label for="model assembly">模型拼装</label>
+<img src="../素材.html/peace.jpg" alt="一个帅气的模型" title="它叫peace" width="200">
+</div>
+<div class="form-group">
+<label>目标：</label>
+<textarea rows="3" cols="30" placeholder="加入红岩网校前端部门！！！"></textarea>
+</div>
+
+</body>
+</html>
