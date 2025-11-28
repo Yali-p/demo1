@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LV3</title>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(255, 253, 253);
+    }
+    .top-nav a {
+        margin: 0 8px;
+        text-decoration: none;
+        color: #5f8cd4;
+        font-size: 14px;
+        transition: color 0.3s;
+    }
+    .top-nav .product{
+        background-color: #36c;
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 4px;
+        }
+    .content{
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo h1{
+        font-size: 36px;
+        color:#36c;
+        letter-spacing: 2px;
+    }
+    .search-box input{
+        width: 435px;
+        height: 45px;
+        border: 1px solid #ddd;
+        border-right: none;
+        padding: 0 15px;
+        outline: none;
+        border-radius: 4px 0 0 4px;
+    }
+    .search-box button{
+        width: 110px;
+        height: 45px;
+        background-color: #36c;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 0 4px 4px 0;
+        font-size: 16px;
+    }
+    .bottom{
+        margin-top: auto;
+        padding: 60px 0;
+        text-align: center;
+        color: #666;
+    }
+    .qrcode img{
+        width: 110px;
+        height: 110px;
+    }
+    .qrcode p {
+        font-size: 15px;
+        margin: 8px 0;
+    }
+    .copyright{
+        margin-top: 25px;
+        font-size: 13px;
+    }
+    .copyright p {
+        margin: 6px 0;
+    }
+    </style>
+</head>
+<body>
+   <header class="top-nav">
+    <a href="#">咨询</a>
+    <a href="#">地图</a>
+    <a href="#">工具</a>
+    <a href="#">视频</a>
+    <a href="#">社区</a>
+    <a href="#">学习</a>
+    <a href="#">登录</a>
+    <a href="#">设置</a>
+    <a href="#" class="product">服务</a>
+   </header> 
+   <main class="content">
+    <div class="logo">
+        <h1>搜索</h1>
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="输入关键词进行搜索">
+        <button>搜索一下</button>
+    </div>
+    </main>
+    <footer class="bottom">
+        <div class="qrcode">
+            <img src="./素材/baidu.png" alt="百度app">
+            <p>下载百度APP</p>
+            <p>随时搜索，随时发现</p>
+        </div>
+        <div class="copyright">
+            <p>我的搜索|使用帮助|联系我们</p>
+            <p>©2025 我的搜索 版权所有</p>
+        </div>
+    </footer>
+</body>
+</html>
