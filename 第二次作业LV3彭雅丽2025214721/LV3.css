@@ -1,0 +1,34 @@
+.container {
+       display: flex;
+       gap: 20px; 
+       align-items: center; 
+       width: 100%;
+       padding: 20px;
+       box-sizing: border-box;
+     }
+.box1, .box2, .box3, .box4 {
+       width: 320px;
+       padding: 10px;
+       color: white;
+     }
+.box1 {
+       height: 500px;
+       flex: none;
+       background: blue;
+     }
+.box2 {
+       height: 300px;
+       flex: 1;
+       background: green;
+     }
+ .box3 {
+       height: 100px;
+       flex:2;
+       align-self: flex-start;
+       background: orange;
+     }
+    .box4 {
+       height: 600px;
+       flex: 2;
+       background: red;
+    }
